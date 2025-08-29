@@ -1,0 +1,27 @@
+{
+  "name": "anthropic-agent-examples",
+  "version": "0.1.0",
+  "description": "Examples of AI agents using Anthropic's API",
+  "author": "Jonathan Hefner",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --import tsx/esm --test \"examples/**/*.test.ts\""
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
